@@ -1,0 +1,15 @@
+name: fda_lab_ss22
+channels:
+  - defaults
+dependencies:
+  - python=3.9.7
+  - numpy=1.21.2
+  - pandas=1.4.1
+  - matplotlib=3.5.1
+  - seaborn=0.11.2
+  - scikit-image=0.18.3
+  - scikit-learn=1.0.2
+  - tensorflow=2.4.1
+  - keras=2.4.3
+  - jupyter=1.0.0
+prefix: /home/anja/anaconda3/envs/fda_lab_ss22
