@@ -81,8 +81,7 @@ def train_predict(X_train, y_train, X_test):
     ## Get and train model
     model = buildModel()
 
-    if (input("Start fit?: ".lower())):
-        model.fit(X_train, y_train, epochs=6, validation_split=0.1, batch_size=128)
+    model.fit(X_train, y_train, epochs=6, validation_split=0.1, batch_size=128)
 
 
     ## Make prediction
