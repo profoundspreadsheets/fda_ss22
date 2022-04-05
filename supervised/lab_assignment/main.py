@@ -11,7 +11,9 @@ def main():
 
     X_test = np.zeros((2,1875)) # spoof testset
 
-    train_predict(X_train_data, y_train_data, X_test)
+    y_pred = train_predict(X_train_data, y_train_data, X_test)
+
+    # You do your stuff with y_pred...
 
 if __name__ == "__main__":
     main()

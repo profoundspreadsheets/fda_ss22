@@ -103,7 +103,7 @@ def train_predict(X_train, y_train, X_test):
     ## In the final implementation we should not split the dataset
     ## Comment this out
     ## TODO if I forget to comment out please be so kind and do so :)
-    X_train, X_test, y_train, y_test = splitDataset(0.8, X_train, y_train)
+    #X_train, X_test, y_train, y_test = splitDataset(0.8, X_train, y_train)
 
     ## Scale data
     scaler = StandardScaler()
@@ -126,7 +126,7 @@ def train_predict(X_train, y_train, X_test):
     y_pred = np.argmax(model.predict(X_test), axis=1)
 
     ### Debug
-    print ("Score: " + str(accuracy_score(y_test, y_pred)))
+    #print ("Score: " + str(accuracy_score(y_test, y_pred)))
 
 
     # --------------------------
