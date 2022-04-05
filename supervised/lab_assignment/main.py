@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from template import train_predict
+from bartl_p import train_predict
 
 def main():
     randomSeed = 420
@@ -9,7 +9,7 @@ def main():
     X_train_data = pd.read_csv("X_train.csv", index_col=0).values
     y_train_data = pd.read_csv("y_train.csv", index_col=0).values
 
-    X_test = np.zeros((2,1875))
+    X_test = np.zeros((2,1875)) # spoof testset
 
     train_predict(X_train_data, y_train_data, X_test)
 
